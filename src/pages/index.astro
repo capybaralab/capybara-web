@@ -1,22 +1,37 @@
 ---
-import Button from '../components/button'
+import '../style/global.css';
+import Button from '../components/button';
 
----
+const discordInviteLink = "https://discord.gg/3nEFZ4ufnV";
+const title = "Web, Mobile Development and UI/UX Design";
+--- 
 
 <html lang="en">
-	<head>
+	<head> 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Astro</title>
-	</head>
+		<title>CapybaraLab - Digital Agency</title>
+	</head> 
 	<body>
-		<main class="">
-			<div class="">
+		<main class="h-full flex justify-center items-center">
+			<div class="flex flex-col justify-center items-center">
 				
-				<h1 class="text-4xl font-bold">Web, Mobile Development and UI/UX Design</h1>
+				<h1 class="text-4xl font-bold max-w-xl text-center mb-12"><span class="underline">Web, Mobile</span> Development and <span class="underline">UI/UX Design</span></h1>
 	
-				<div>
-					<Button>test</Button>
+				<div class="flex flex-wrap justify-center">
+	
+					<img src={"/assets/capybara.webp"} alt="capybara" class="rounded-md select-none drag-none"/>
+
+					<img src={"/assets/path.svg"} alt="" class="mx-8 hidden sm:block">
+
+					<div class="flex flex-col gap-6 justify-center m-4 sm:text-left text-center">  
+						<a href={discordInviteLink}>
+							<Button color="primary">Join Discord 👽</Button>
+						</a>
+						<a color="white" href="mailto: hello@capybaralab.com">
+							<Button>hello@capybaralab.com  👋</Button>
+						</a>
+					</div>
 				</div>
 			</div> 
 		</main>
