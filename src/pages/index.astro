@@ -1,16 +1,26 @@
 ---
 import '../style/global.css';
-import Button from '../components/button';
+import Link from '../components/link';
 
 const discordInviteLink = "https://discord.gg/3nEFZ4ufnV";
-const title = "Web, Mobile Development and UI/UX Design";
+const siteTitle = "CapybaraLab - Digital Agency";
+const description = "CapybaraLab is a digital agency that specializes in web development and design. We are a team of talented and creative people who are dedicated to creating beautiful and functional websites.";
 --- 
 
 <html lang="en">
 	<head> 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>CapybaraLab - Digital Agency</title>
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="description" content={description} />
+    <meta name="twitter:image" content="/assets/media.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@capybaralab" />
+    <meta property="og:title" content={siteTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/assets/media.png" />
+    <title>{siteTitle}</title>
+    <meta name="theme-color" content="#ffffff" />
 	</head> 
 	<body>
 		<main class="h-full flex justify-center items-center">
@@ -22,17 +32,13 @@ const title = "Web, Mobile Development and UI/UX Design";
 	
 					<img src={"/assets/capybara.webp"} alt="capybara" class="rounded-md select-none drag-none"/>
 
-					<img src={"/assets/path.svg"} alt="" class="mx-8 hidden sm:block">
+					<img src={"/assets/path.svg"} alt="" class="mx-8 hidden sm:block select-none drag-none">
 
 					<div class="flex flex-col gap-6 justify-center m-4 sm:text-left text-center">  
-						<a href={discordInviteLink}>
-							<Button color="primary">Join Discord 👽</Button>
-						</a>
-						<a color="white" href="mailto: hello@capybaralab.com">
-							<Button>hello@capybaralab.com  👋</Button>
-						</a>
+							<Link href={discordInviteLink} color="primary">Join Discord 👽</Link>
+							<Link color="white" href="mailto: hello@capybaralab.com">hello@capybaralab.com  👋</Link>
 					</div>
-				</div>
+				</div> 
 			</div> 
 		</main>
 	</body> 
