@@ -9,11 +9,11 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.3.1",
-    "@astrojs/react": "^0.4.2",
+    "@astrojs/image": "^0.3.7",
+    "@astrojs/react": "^0.4.3",
     "@astrojs/tailwind": "^0.2.5",
-    "astro": "^1.0.0-rc.6",
-    "prettier": "^2.7.1",
+    "astro": "^1.9.2",
+    "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
